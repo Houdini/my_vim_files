@@ -140,3 +140,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "plugin/gist-vim"]
+	path = plugin/gist-vim
+	url = https://github.com/mattn/gist-vim.git
