@@ -1,3 +1,6 @@
+"avoiding annoying CSApprox warning message
+let g:CSApprox_verbose_level = 0
+
 "necessary on some Linux distros for pathogen to properly load bundles
 filetype off
 
