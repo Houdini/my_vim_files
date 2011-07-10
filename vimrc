@@ -2,6 +2,7 @@
 let g:CSApprox_verbose_level = 0
 
 "necessary on some Linux distros for pathogen to properly load bundles
+filetype on
 filetype off
 
 "load pathogen managed plugins
