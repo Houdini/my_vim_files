@@ -27,12 +27,14 @@ h1. Bundled Plugins
 * "surround":http://www.vim.org/scripts/script.php?script_id=1697 - add, change, remove surrounding parentheses, brackets, quotes, etc
 * "syntastic":http://www.vim.org/scripts/script.php?script_id=2736 - checks for syntax errors in many languages
 * "textile":http://www.vim.org/scripts/script.php?script_id=2305 - syntax highlight for Textile
+* "vim-bundler":https://github.com/tpope/vim-bundler - Bundler support for Vim
 * "vim-coffee-script":https://github.com/kchmck/vim-coffee-script - syntax highlight for Coffee Script
 * "vim-jade":https://github.com/statianzo/vim-jade - Vim syntax highlighting for the Jade templating engine
 * "vim-jquery":https://github.com/itspriddle/vim-jquery - Vim syntax file to add some colorations for jQuery keywords and css selectors
 * "vim-preview":http://www.vim.org/scripts/script.php?script_id=3344 - [leader] P previews Markdown, Rdoc, Textile, html. Requires Ruby and other gems.
 * "vim-ruby-sinatra":https://github.com/hallison/vim-ruby-sinatra - syntax highlight for Sinatra
 * "vim-ruby":https://github.com/vim-ruby/vim-ruby/wiki - syntax highlight, smart identation, auto-complete for Ruby
+* "vim-rvm":https://github.com/tpope/vim-rvm - RVM support for Vim
 * "vim-textobj-rubyblock":http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/ - smart block selection in Ruby code
 * "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - color scheme inspired by the classic Vibrant for Textmate
 * "Zencoding":http://www.vim.org/scripts/script.php?script_id=2981 - powerful way for HTML abbreviations (learn here: http://code.google.com/p/zen-coding/). Type abbreviation and press Ctrl+Y+comma (c-y ,)
