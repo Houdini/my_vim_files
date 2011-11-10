@@ -155,3 +155,6 @@
 [submodule "bundle/actionscript"]
 	path = bundle/actionscript
 	url = git://github.com/endel/actionscript.vim.git
+[submodule "bundle/vim-capybara"]
+	path = bundle/vim-capybara
+	url = git://github.com/asux/vim-capybara.git
