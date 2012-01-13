@@ -393,8 +393,8 @@ map <C-l> <C-w>l
 nmap <C-s> :w<CR>
 
 "key mapping for tab navigation
-nmap <Tab> gt
-nmap <S-Tab> gT
+nmap <S-Tab> gt
+nmap <C-S-Tab> gT
 
 "Key mapping for textmate-like indentation
 nmap <D-[> <<
