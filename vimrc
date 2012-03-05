@@ -260,7 +260,12 @@ else
         set term=gnome-256color
         colorscheme railscasts
     else
-        colorscheme default
+        if $TERM == 'xterm'
+            set term=xterm-256color
+            colorscheme railscasts
+        else
+            colorscheme default
+        endif
     endif
 endif
 
