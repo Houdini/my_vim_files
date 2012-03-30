@@ -158,3 +158,9 @@
 [submodule "bundle/vim-capybara"]
 	path = bundle/vim-capybara
 	url = git://github.com/asux/vim-capybara.git
+[submodule "bundle/vim-autoclose"]
+	path = bundle/vim-autoclose
+	url = git://github.com/Townk/vim-autoclose.git
+[submodule "bundle/vim-golang"]
+	path = bundle/vim-golang
+	url = git://github.com/jnwhiteh/vim-golang.git
