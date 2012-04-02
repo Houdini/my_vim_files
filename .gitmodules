@@ -176,6 +176,3 @@
 [submodule "bundle/vim-indexed-search"]
 	path = bundle/vim-indexed-search
 	url = git://github.com/henrik/vim-indexed-search.git
-[submodule "bundle/change-inside-surroundings"]
-	path = bundle/change-inside-surroundings
-	url = git://github.com/briandoll/change-inside-surroundings.vim.git
