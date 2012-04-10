@@ -138,7 +138,7 @@ extension, so you will have to do this:
 
 <pre><code>
 rvm use system # use this line if using rvm
-cd ~/.vim/bundle/Command-T/ruby/command-t
+cd ~/.vim/bundle/vim-command-t/ruby/command-t
 ruby extconf.rb
 make
 </code></pre>
