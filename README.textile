@@ -20,6 +20,7 @@ h1. Bundled Plugins
 * "markdown":http://www.vim.org/scripts/script.php?script_id=1242 - syntax highlight for Markdown
 * "NERD_commenter":http://www.vim.org/scripts/script.php?script_id=1218 - support to comment lines of code
 * "NERD_tree":http://www.vim.org/scripts/script.php?script_id=1658 - project pane that you can open with [leader] p
+* "NrrwRgn":https://github.com/chrisbra/NrrwRgn - A Narrow Region Plugin for vim (like Emacs Narrow Region)
 * "ragtag":http://www.vim.org/scripts/script.php?script_id=1896 - easier way to create tags for html, erb, etc
 * "rails":http://www.vim.org/scripts/script.php?script_id=1567 - lot's of tools to make it easier to manage your Rails projects
 * "snipmate":https://github.com/akitaonrails/snipmate.vim - support for textmate-like snippets for several languages
@@ -28,7 +29,9 @@ h1. Bundled Plugins
 * "syntastic":http://www.vim.org/scripts/script.php?script_id=2736 - checks for syntax errors in many languages
 * "textile":http://www.vim.org/scripts/script.php?script_id=2305 - syntax highlight for Textile
 * "vim-bundler":https://github.com/tpope/vim-bundler - Bundler support for Vim
+* "vim-buffergator":https://github.com/jeetsukumaran/vim-buffergator - Vim plugin to list, select and switch between buffers.
 * "vim-coffee-script":https://github.com/kchmck/vim-coffee-script - syntax highlight for Coffee Script
+* "vim-easymotion":https://github.com/Lokaltog/vim-easymotion - Vim motions on speed!
 * "vim-jade":https://github.com/statianzo/vim-jade - Vim syntax highlighting for the Jade templating engine
 * "vim-jquery":https://github.com/itspriddle/vim-jquery - Vim syntax file to add some colorations for jQuery keywords and css selectors
 * "vim-preview":http://www.vim.org/scripts/script.php?script_id=3344 - [leader] P previews Markdown, Rdoc, Textile, html. Requires Ruby and other gems.
@@ -36,8 +39,10 @@ h1. Bundled Plugins
 * "vim-ruby":https://github.com/vim-ruby/vim-ruby/wiki - syntax highlight, smart identation, auto-complete for Ruby
 * "vim-rvm":https://github.com/tpope/vim-rvm - RVM support for Vim
 * "vim-textobj-rubyblock":http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/ - smart block selection in Ruby code
+* "vim-vroom":https://github.com/skalnik/vim-vroom - A vim plugin for running your Ruby tests
 * "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - color scheme inspired by the classic Vibrant for Textmate
 * "Zencoding":http://www.vim.org/scripts/script.php?script_id=2981 - powerful way for HTML abbreviations (learn here: http://code.google.com/p/zen-coding/). Type abbreviation and press Ctrl+Y+comma (c-y ,)
+* "ZoomWin":https://github.com/vim-scripts/ZoomWin - Zoom in/out of windows (toggle between one window and multi-window)
 
 h1. Usage
 
