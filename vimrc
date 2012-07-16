@@ -219,6 +219,10 @@ set ttymouse=xterm2
 "hide buffers when not displayed
 set hidden
 
+"Activate smartcase
+set ic
+set smartcase
+
 if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
