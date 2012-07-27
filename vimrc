@@ -71,6 +71,7 @@ set laststatus=2
 set guioptions-=T
 "turn off the scroll bar
 set guioptions-=L
+set guioptions-=r
 
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
@@ -442,3 +443,5 @@ inoremap <Esc>C <right>
 inoremap <Esc>D <left>
 
 map <C-t> :CtrlP<CR>
+
+
