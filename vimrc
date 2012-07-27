@@ -69,6 +69,8 @@ set laststatus=2
 
 "turn off needless toolbar on gvim/mvim
 set guioptions-=T
+"turn off the scroll bar
+set guioptions-=L
 
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
@@ -227,19 +229,21 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme railscasts
+    colorscheme molokai
     set guitablabel=%M%t
     set lines=40
     set columns=115
+    set transparency=7
 
     if has("gui_gnome")
         set term=gnome-256color
-        colorscheme railscasts
+        colorscheme molokai
         set guifont=Monospace\ Bold\ 12
+        set transparency=7
     endif
 
     if has("gui_mac") || has("gui_macvim")
-        set guifont=Menlo:h14
+        set guifont=Menlo:h12
     endif
 
     if has("gui_win32") || has("gui_win32s")
@@ -253,11 +257,11 @@ else
     "set railscasts colorscheme when running vim in gnome terminal
     if $COLORTERM == 'gnome-terminal'
         set term=gnome-256color
-        colorscheme railscasts
+        colorscheme molokai
     else
         if $TERM == 'xterm'
             set term=xterm-256color
-            colorscheme railscasts
+            colorscheme molokai
         else
             colorscheme default
         endif
