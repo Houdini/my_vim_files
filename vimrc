@@ -234,17 +234,16 @@ if has("gui_running")
     set guitablabel=%M%t
     set lines=40
     set columns=115
-    set transparency=7
 
     if has("gui_gnome")
         set term=gnome-256color
         colorscheme molokai
         set guifont=Monospace\ Bold\ 12
-        set transparency=7
     endif
 
     if has("gui_mac") || has("gui_macvim")
         set guifont=Menlo:h12
+        set transparency=7
     endif
 
     if has("gui_win32") || has("gui_win32s")
@@ -441,7 +440,3 @@ inoremap <Esc>A <up>
 inoremap <Esc>B <down>
 inoremap <Esc>C <right>
 inoremap <Esc>D <left>
-
-map <C-t> :CtrlP<CR>
-
-
