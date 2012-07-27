@@ -240,7 +240,6 @@ if has("gui_running")
         set term=gnome-256color
         colorscheme molokai
         set guifont=Monospace\ Bold\ 12
-        set transparency=7
     endif
 
     if has("gui_mac") || has("gui_macvim")
@@ -441,7 +440,3 @@ inoremap <Esc>A <up>
 inoremap <Esc>B <down>
 inoremap <Esc>C <right>
 inoremap <Esc>D <left>
-
-map <C-t> :CtrlP<CR>
-
-
