@@ -441,4 +441,6 @@ inoremap <Esc>B <down>
 inoremap <Esc>C <right>
 inoremap <Esc>D <left>
 
-set noballooneval
+if has("balloon_eval")
+  set noballooneval
+endif
