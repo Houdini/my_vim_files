@@ -97,11 +97,20 @@ hi perlStatementControl     gui=NONE    guifg=#dcdb6b   guibg=bg
 hi perlStatementSub         gui=NONE    guifg=#c0c090   guibg=bg
 hi perlVarSimpleMember      gui=NONE    guifg=#c0c090   guibg=bg
 hi perlVarSimpleMemberName  gui=NONE    guifg=grey70    guibg=bg
+hi rubySymbol               gui=NONE    guifg=#5f9ccc   guibg=bg
+hi rubyBoolean              gui=NONE    guifg=#9a5fcc   guibg=bg
+hi rubyInteger              gui=NONE    guifg=#5fc8cc   guibg=bg
+hi rubyFloat                gui=NONE    guifg=#5fccaf   guibg=bg
+hi rubyFunction             gui=NONE    guifg=#ccb65f   guibg=bg
+hi rubyInstanceVariable     gui=NONE    guifg=#b0f0bb   guibg=bg
+hi rubyRegexp               gui=NONE    guifg=#e7c897   guibg=bg
+hi NERDTreeDir              gui=NONE    guifg=#d8d288   guibg=bg
+hi rubyComment              gui=NONE    guifg=#9e9e9e   guibg=bg
 
 " -------------------------------------------------------------------------------------------------
 " perlStatementRegexp perlSpecialDollar perlSpecialStringU perlSubstitutionBracket
 " perlTranslationBracket perlType perlStatementStorage perlStatementScalar
-" perlStatementNumeric perlStatementList perlStatementIOfunc 
+" perlStatementNumeric perlStatementList perlStatementIOfunc
 " perlStatementVector perlStatementFiles perlStatementFlow perlStatementScope
 " perlStatementProc perlStatementSocket perlStatementIPC perlStatementNetwork perlStatementPword
 " perlStatementTime perlStatementMisc perlStatementPackage perlList perlMisc
