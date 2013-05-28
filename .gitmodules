@@ -202,3 +202,6 @@
 [submodule "bundle/simpledb"]
 	path = bundle/simpledb
 	url = https://github.com/ivalkeen/vim-simpledb
+[submodule "bundle/ag.vim"]
+	path = bundle/ag.vim
+	url = git://github.com/epmatsw/ag.vim.git
