@@ -444,3 +444,5 @@ inoremap <Esc>D <left>
 if has("balloon_eval")
   set noballooneval
 endif
+
+let g:ctrlp_map = '<c-p>'
