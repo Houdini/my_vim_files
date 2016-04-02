@@ -208,3 +208,6 @@
 [submodule "bundle/MatchTagAlways"]
   path = bundle/MatchTagAlways
   url = git://github.com/Valloric/MatchTagAlways.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
