@@ -319,22 +319,22 @@ function! s:SetupSnippets()
     "if we're in a rails env then read in the rails snippets
     if filereadable("./config/environment.rb")
       try
-        call ExtractSnips("~/.vim/snippets/ruby-rails", "ruby")
-        call ExtractSnips("~/.vim/snippets/eruby-rails", "eruby")
+        " call ExtractSnips("~/.vim/snippets/ruby-rails", "ruby")
+        " call ExtractSnips("~/.vim/snippets/eruby-rails", "eruby")
       catch
-        call ExtractSnips("~/vimfiles/snippets/ruby-rails", "ruby")
-        call ExtractSnips("~/vimfiles/snippets/eruby-rails", "eruby")
+        " call ExtractSnips("~/vimfiles/snippets/ruby-rails", "ruby")
+        " call ExtractSnips("~/vimfiles/snippets/eruby-rails", "eruby")
       endtry
     endif
 
     try
-      call ExtractSnips("~/.vim/snippets/html", "eruby")
-      call ExtractSnips("~/.vim/snippets/html", "xhtml")
-      call ExtractSnips("~/.vim/snippets/html", "php")
+      " call ExtractSnips("~/.vim/snippets/html", "eruby")
+      " call ExtractSnips("~/.vim/snippets/html", "xhtml")
+      " call ExtractSnips("~/.vim/snippets/html", "php")
     catch
-      call ExtractSnips("~/vimfiles/snippets/html", "eruby")
-      call ExtractSnips("~/vimfiles/snippets/html", "xhtml")
-      call ExtractSnips("~/vimfiles/snippets/html", "php")
+      " call ExtractSnips("~/vimfiles/snippets/html", "eruby")
+      " call ExtractSnips("~/vimfiles/snippets/html", "xhtml")
+      " call ExtractSnips("~/vimfiles/snippets/html", "php")
     endtry
 endfunction
 
@@ -446,3 +446,120 @@ if has("balloon_eval")
 endif
 
 let g:ctrlp_map = '<c-p>'
+
+" Auto save when focus lost and ignore warnings from untitled buffers
+:au FocusLost * silent! :wa
+" Save on buffer switch
+:set autowriteall
+set runtimepath+=~/.vim/vim-objj
+au BufNewFile,BufRead *.j,Jakefile setf objj
+" au! BufRead,BufNewFile *.json set filetype=json
+autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.prawn set ft=ruby
+au BufRead,BufNewFile /opt/nginx/conf/* set ft=nginx
+au BufRead,BufNewFile /mili/**/nginx/*.conf set ft=nginx
+au BufRead,BufNewFile boss.config setf erlang
+au BufRead,BufNewFile *.mixal setf mix
+
+au BufRead,BufNewFile /Users/houdini/mili/mili/config/nginx/* set ft=nginx
+
+" Поиск без учета регистра
+set ignorecase
+
+" Умный поиск
+set smartcase
+
+" Табы
+" map <S-Left> :tabp<CR>
+" map <S-Right> :tabn<CR>
+map <S-h> :tabp<CR>
+map <S-l> :tabn<CR>
+
+" setlocal spell spelllang=ru_yo,en_us
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+" highlight lCursor guifg=NONE guibg=Cyan
+
+" .- искать относительно директории, из которой открыт текущий файл
+" ,,- искать в текущей директории (вы всегда можете узнать информацию о ней из команды :pwd)
+" **- указывает на то, что бы искать в поддиректориях
+set path=.,,**
+set expandtab tabstop=2 softtabstop=2 shiftwidth=2
+
+" use /tmp for temp files
+" set directory=/tmp
+
+" Disable swap for ssd disks
+set nobackup
+set nowritebackup
+set noswapfile
+
+" use ~/.backup for backup files
+set backupdir=~/.backup
+
+" fast autocomplete
+" http://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow
+set complete-=i
+
+" Добавляем проверку синтаксиса
+let g:syntastic_enable_signs=1
+
+if has("transparency")
+  set transparency=0
+endif
+
+" Press Space to turn off highlighting and clear any message already
+" displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Disable cursor blinking
+:set guicursor+=a:blinkon0
+
+" Set color scheme
+colorscheme autumn2
+
+if has("gui_running")
+  colorscheme no_quarter
+endif
+
+"map to CommandT TextMate style finder
+noremap <leader>t :CommandT<CR>
+let g:ctrlp_map = '<c-p>'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/doc/*,*/coverage/*
+
+:set tags+=~/gem.tags
+" :nmap ,t :!(cd %:p:h;/usr/local/bin/ctags *)&
+" au BufWritePost *.c,*.rb,*.h,*.rake silent! !/usr/local/bin/ctags -R &
+" :set tw=0 wrap linebreak
+
+" get read of W11
+set autoread
+
+" special highlight
+let ruby_operators=1
+let ruby_no_expensive=1
+let ruby_minlines=200
+
+set nocompatible      " We're running Vim, not Vi!
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
+" quicker <esc>
+set timeoutlen=100
+
+nmap <Leader>t :CtrlPRoot<Enter>
+
+let g:mta_filetypes = { 'html' : 1, 'xhtml' : 1, 'xml' : 1, 'jinja' : 1, 'xsd' : 1 }
+
+" Disable blinking
+set visualbell t_vb=
+
+" Set color scheme
+colorscheme autumn2
+
+" Отключает popup в mvim
+setlocal balloonexpr=
+set noballooneval
